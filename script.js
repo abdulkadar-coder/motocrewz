@@ -45,19 +45,47 @@ let introTimer = null;
 let introCount = null;
 let revealsStarted = false;
 
+// Lenis keeps the browser's native scroll model while softening wheel input.
+// The site remains fully usable if either optional CDN library is unavailable.
+let lenis = null;
+if (!reducedMotion && window.Lenis) {
+  lenis = new window.Lenis({
+    autoRaf: true,
+    anchors: true,
+    duration: 1.05,
+    smoothWheel: true
+  });
+}
+
+function revealElement(el) {
+  if (window.gsap && !reducedMotion) {
+    window.gsap.to(el, {
+      autoAlpha: 1,
+      y: 0,
+      duration: 0.9,
+      delay: parseFloat(getComputedStyle(el).getPropertyValue("--d")) || 0,
+      ease: "power3.out",
+      overwrite: "auto",
+      onComplete: () => el.classList.add("is-in")
+    });
+  } else {
+    el.classList.add("is-in");
+  }
+}
+
 function startReveals() {
   if (revealsStarted) return;
   revealsStarted = true;
   const els = $$("[data-reveal]");
   if (reducedMotion || !("IntersectionObserver" in window)) {
-    els.forEach((el) => el.classList.add("is-in"));
+    els.forEach(revealElement);
     return;
   }
   const io = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("is-in");
+          revealElement(entry.target);
           io.unobserve(entry.target);
         }
       });
@@ -65,6 +93,19 @@ function startReveals() {
     { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
   );
   els.forEach((el) => io.observe(el));
+}
+
+// A short, sequenced arrival gives the hero a little more depth once the
+// loading mark clears, while the CSS animation remains the no-GSAP fallback.
+function animateHero() {
+  if (!window.gsap || reducedMotion) return;
+  const copy = $(".hero__copy");
+  const media = $(".hero__media");
+  if (!copy || !media) return;
+  window.gsap.fromTo(media, { clipPath: "inset(8% 0 0 0 round 26px)", y: 24 }, {
+    clipPath: "inset(0% 0 0 0 round 26px)", y: 0, duration: 1.2,
+    ease: "power3.out", delay: 0.12, clearProps: "clipPath"
+  });
 }
 
 function finishIntro() {
@@ -79,6 +120,7 @@ function finishIntro() {
     setTimeout(() => intro.remove(), 1150);
   }
   startReveals();
+  animateHero();
 }
 
 if (reducedMotion) {
@@ -323,6 +365,28 @@ if (stage) {
       e.preventDefault();
       setActive(PRODUCTS.length - 1);
     }
+  });
+}
+
+// React Bits inspired spotlight cards, adapted to this vanilla site. The
+// highlight tracks the pointer without changing the carousel's own transforms.
+if (!reducedMotion && window.matchMedia("(pointer:fine)").matches) {
+  $$(".review").forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--spot-x", `${event.clientX - rect.left}px`);
+      card.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
+      if (window.gsap) {
+        window.gsap.to(card, {
+          rotateX: ((event.clientY - rect.top) / rect.height - 0.5) * -3,
+          rotateY: ((event.clientX - rect.left) / rect.width - 0.5) * 3,
+          duration: 0.35, ease: "power2.out", overwrite: true, transformPerspective: 900
+        });
+      }
+    });
+    card.addEventListener("pointerleave", () => {
+      if (window.gsap) window.gsap.to(card, { rotateX: 0, rotateY: 0, duration: 0.55, ease: "power3.out" });
+    });
   });
 }
 

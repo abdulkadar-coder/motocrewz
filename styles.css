@@ -18,7 +18,11 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-html{scroll-behavior:smooth;background:var(--cream);overflow-x:hidden}
+html{background:var(--cream);overflow-x:hidden}
+html:not(.lenis){scroll-behavior:smooth}
+html.lenis,html.lenis body{height:auto}
+html.lenis.lenis-smooth{scroll-behavior:auto!important}
+html.lenis.lenis-stopped{overflow:hidden}
 
 body{
   background:var(--cream);
@@ -393,7 +397,14 @@ body.menu-open .nav__toggle span:last-child{top:21px;transform:rotate(-45deg)}
   padding:28px;background:rgba(255,255,255,.025);
   display:flex;flex-direction:column;min-height:250px;
   transition:background-color .4s var(--ease),border-color .4s var(--ease);
+  position:relative;isolation:isolate;overflow:hidden;transform-style:preserve-3d;
 }
+.review::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:0;
+  background:radial-gradient(320px circle at var(--spot-x,50%) var(--spot-y,50%),rgba(216,85,43,.17),transparent 72%);
+  transition:opacity .35s ease;
+}
+.review:hover::before{opacity:1}
 .review:hover{background:rgba(255,255,255,.05);border-color:rgba(237,231,219,.3)}
 .review__stars{color:var(--orange);font-size:11px;letter-spacing:3px}
 .review p{font-size:14.5px;line-height:1.62;color:rgba(237,231,219,.82);margin-top:20px;flex:1}
