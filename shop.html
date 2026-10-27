@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parts &amp; Sundries — MOTOCREWZ®</title>
+<meta name="description" content="Spare parts, exhausts, apparel and workshop goods from the Motocrewz garage in Lisbon. Small batches, proven metal, shipped worldwide.">
+<meta property="og:title" content="Parts &amp; Sundries — MOTOCREWZ®">
+<meta property="og:description" content="Spare parts, exhausts and workshop goods for the long way home.">
+<meta property="og:image" content="assets/p3.jpg">
+<meta name="theme-color" content="#EDE7DB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151310'/%3E%3Cpath d='M16 46V18h7l9 13 9-13h7v28h-7V30l-9 12-9-12v16z' fill='%23EDE7DB'/%3E%3Ccircle cx='48' cy='18' r='4' fill='%23D8552B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="shop.css">
+<noscript><style>.catalog__noscript{display:block!important}</style></noscript>
+</head>
+<body class="shop-page">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav nav--solid" id="nav">
+  <div class="nav__inner">
+    <button class="nav__menu" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span class="nav__burger" aria-hidden="true"><i></i><i></i></span>
+      <span class="nav__label">Menu</span>
+    </button>
+
+    <a href="index.html" class="logo logo--nav" aria-label="Motocrewz home">MOTOCREWZ</a>
+
+    <button class="nav__store nav__cart-btn" id="cartOpen" type="button" aria-label="Open cart, 0 items" aria-haspopup="dialog" aria-controls="cartDrawer" data-cursor>
+      <span class="nav__cart-label">Cart</span>
+      <svg class="nav__bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <path d="M4.8 8.2h14.4L18 20.2H6L4.8 8.2Z"/><path d="M9 8.2V6.4a3 3 0 0 1 6 0v1.8"/>
+      </svg>
+      <span class="nav__cart-count" id="navCartCount" data-cart-count data-empty="true">0</span>
+    </button>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <div class="nav__links-inner">
+        <a href="#catalog" class="nav__link" data-shop-filter="all"><span>01</span>Everything</a>
+        <a href="#catalog" class="nav__link" data-shop-filter="spare"><span>02</span>Spare parts</a>
+        <a href="#catalog" class="nav__link" data-shop-filter="exhaust"><span>03</span>Exhausts</a>
+        <a href="#catalog" class="nav__link" data-shop-filter="apparel"><span>04</span>Apparel</a>
+        <a href="#catalog" class="nav__link" data-shop-filter="care"><span>05</span>Care</a>
+        <a href="index.html" class="nav__link"><span>06</span>The garage</a>
+      </div>
+      <div class="nav__links-foot">
+        <span>Lisbon, Portugal</span>
+        <a href="mailto:hello@motocrewz.com">hello@motocrewz.com</a>
+        <a href="index.html#join" class="nav__links-cta">Book a build →</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="shop-hero" aria-labelledby="shopTitle">
+    <div class="shop-hero__grid" aria-hidden="true"></div>
+    <div class="container shop-hero__inner">
+
+      <div class="shop-hero__top">
+        <p class="label"><span>01</span> The parts counter — Lisbon</p>
+        <p class="shop-hero__ship"><i aria-hidden="true"></i> Ships worldwide · Packed by the crew</p>
+      </div>
+
+      <div class="shop-hero__main">
+        <div class="shop-hero__copy">
+          <h1 class="shop-hero__title" id="shopTitle">Parts <em>&amp;</em><br><span class="shop-hero__outline">Sundries</span></h1>
+          <p class="shop-hero__lede">Spare parts, exhausts and workshop goods for machines that earn their keep. Small batches, proven metal, no filler.</p>
+          <div class="shop-hero__actions">
+            <a href="#catalog" class="btn btn--dark btn--lg" data-cursor>Shop the counter <span aria-hidden="true">↓</span></a>
+            <a href="mailto:hello@motocrewz.com?subject=Fitment%20help" class="btn btn--ghost btn--lg" data-cursor>Fitment help</a>
+          </div>
+          <dl class="shop-hero__facts">
+            <div><dt>Objects in stock</dt><dd>15</dd></div>
+            <div><dt>Categories</dt><dd>04</dd></div>
+            <div><dt>Dispatch</dt><dd>48 h</dd></div>
+          </dl>
+        </div>
+
+        <figure class="shop-hero__figure">
+          <div class="shop-hero__stamp" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs>
+                <path id="stampCircle" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0" fill="none"/>
+              </defs>
+              <text><textPath href="#stampCircle">MADE IN LISBON · SMALL BATCH · MC 2026 · </textPath></text>
+              <path d="M60 42v36M42 60h36" class="art-accent"/>
+              <circle cx="60" cy="60" r="9" class="art-fill"/>
+            </svg>
+          </div>
+
+          <svg class="shop-hero__art" viewBox="0 0 640 520" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="heroArtTitle heroArtDesc">
+            <title id="heroArtTitle">Technical drawing of a Motocrewz two-into-one exhaust</title>
+            <desc id="heroArtDesc">A line illustration of a hand-welded stainless exhaust with two header pipes, a collector and a slip-on muffler, annotated with dimensions and part codes.</desc>
+            <g opacity=".32" stroke-width="1">
+              <path d="M0 80h640M0 160h640M0 240h640M0 320h640M0 400h640M80 0v520M160 0v520M240 0v520M320 0v520M400 0v520M480 0v520M560 0v520" stroke-dasharray="1 9"/>
+            </g>
+
+            <g transform="translate(24 8)">
+              <path d="M46 146c52 0 66 48 108 60s90 14 126 42" stroke-width="2.6"/>
+              <path d="M36 196c52 8 68 40 108 48s86 14 130 38" stroke-width="2.6"/>
+              <path d="M46 146c-10 0-18 8-18 18v12M36 196c-10 2-16 10-14 20"/>
+              <path d="M84 148v-15M92 152v-13M70 196v-15M78 200v-13" class="art-accent"/>
+              <path d="M280 248c24 6 40 16 52 28" stroke-width="2.6"/>
+
+              <g transform="translate(308 264) rotate(10)">
+                <path d="M0-42l-38-12v86l38-14z"/>
+                <rect x="0" y="-44" width="238" height="88" rx="42"/>
+                <ellipse cx="238" cy="0" rx="18" ry="44"/>
+                <path d="M52-44v88M176-44v88" opacity=".45"/>
+                <rect x="100" y="-44" width="14" height="88" class="art-fill"/>
+                <path d="M26-44c2-20 16-34 34-38"/>
+                <path d="M210 44l10 30"/>
+              </g>
+
+              <path d="M410 210v-40h44v22"/>
+              <circle cx="454" cy="192" r="6"/>
+              <circle cx="454" cy="192" r="2.5" class="art-fill"/>
+              <path d="M438 170v-24m8 24v-18" class="art-accent"/>
+
+              <path d="M34 342h558M34 332v20M592 332v20" opacity=".5"/>
+              <path d="M42 354l-8 8 8 8M584 354l8 8-8 8" opacity=".5"/>
+              <circle cx="340" cy="342" r="3" class="art-fill"/>
+              <path d="M340 342v-26" opacity=".4"/>
+            </g>
+
+            <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" letter-spacing="2.2" fill="currentColor" stroke="none">
+              <text x="60" y="438">610 MM OVERALL</text>
+              <text x="60" y="466" class="art-accent-fill">MC–EX–02</text>
+              <text x="60" y="484">2-INTO-1 / 304 STAINLESS</text>
+              <text x="60" y="502">HAND TIG WELDED / LISBON</text>
+              <text x="438" y="118">SLIP-ON / 88 MM</text>
+            </g>
+            <path d="M468 138l-54 26M468 138h58" opacity=".35" stroke-width="1"/>
+            <circle cx="468" cy="138" r="3" class="art-fill"/>
+
+            <g transform="translate(540 416)" opacity=".65">
+              <circle r="60" stroke-width="1"/>
+              <circle r="48" stroke-width="1" stroke-dasharray="2 5"/>
+              <path d="M-11-7l22 0M0-18v22" class="art-accent"/>
+            </g>
+          </svg>
+
+          <figcaption class="shop-hero__caption"><span>Fig. 01</span> Vulcan 2-into-1 · 304 stainless · hand TIG welded</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>SPARE PARTS</span><b>✳</b><span>EXHAUSTS</span><b>✳</b><span>APPAREL</span><b>✳</b><span>CARE</span><b>✳</b><span>SHIPPED FROM LISBON</span><b>✳</b><span>SPARE PARTS</span><b>✳</b><span>EXHAUSTS</span><b>✳</b><span>APPAREL</span><b>✳</b><span>CARE</span><b>✳</b><span>SHIPPED FROM LISBON</span><b>✳</b>
+    </div>
+  </div>
+
+  <section class="catalog" id="catalog" aria-labelledby="catalogTitle">
+    <div class="container">
+      <div class="catalog__head">
+        <div>
+          <p class="label"><span>02</span> Everything in the drawers</p>
+          <h2 class="catalog__title" id="catalogTitle">The <em>counter</em></h2>
+        </div>
+        <p class="catalog__intro">We only stock what we fit to our own bikes. If it is in the drawer, it has been ridden, broken and improved. Pick a part, add it to the kit.</p>
+      </div>
+
+      <div class="catalog__bar" id="catalogBar">
+        <div class="filters" id="filters" role="group" aria-label="Filter the counter">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span data-count="all">15</span></button>
+          <button class="filter" type="button" data-filter="spare" aria-pressed="false">Spare parts <span data-count="spare">5</span></button>
+          <button class="filter" type="button" data-filter="exhaust" aria-pressed="false">Exhausts <span data-count="exhaust">3</span></button>
+          <button class="filter" type="button" data-filter="apparel" aria-pressed="false">Apparel <span data-count="apparel">4</span></button>
+          <button class="filter" type="button" data-filter="care" aria-pressed="false">Care <span data-count="care">3</span></button>
+        </div>
+
+        <div class="catalog__tools">
+          <label class="search" for="searchInput">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <input id="searchInput" type="search" placeholder="Search the drawers" autocomplete="off" spellcheck="false">
+            <button class="search__clear" id="searchClear" type="button" aria-label="Clear search" hidden>×</button>
+          </label>
+          <label class="sort" for="sortSelect">
+            <span>Sort</span>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price, low to high</option>
+              <option value="price-desc">Price, high to low</option>
+              <option value="name-asc">A — Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="catalog__meta">
+        <p id="resultCount" aria-live="polite">15 objects</p>
+        <button class="catalog__clear" id="clearFilters" type="button" hidden>Clear filters</button>
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite" aria-busy="true"></div>
+
+      <div class="catalog__empty" id="emptyState" hidden>
+        <span class="catalog__empty-mark" aria-hidden="true">✳</span>
+        <h3>Nothing in that drawer.</h3>
+        <p>Try another word or open the whole counter.</p>
+        <button class="btn btn--dark" id="emptyReset" type="button">Show everything</button>
+      </div>
+
+      <p class="catalog__noscript">The parts counter needs JavaScript to load stock. Email <a href="mailto:hello@motocrewz.com">hello@motocrewz.com</a> and the crew will pack it by hand.</p>
+    </div>
+  </section>
+
+  <section class="service" aria-labelledby="serviceTitle">
+    <div class="container service__inner">
+      <div class="service__lead">
+        <p class="label label--light"><span>03</span> After the sale</p>
+        <h2 class="service__title" id="serviceTitle">Fit it once.<br><em>Ride it far.</em></h2>
+        <p>Ordering a part is the easy bit. Getting it right is the job. Every order comes with a real human on the other end of the email.</p>
+      </div>
+      <div class="service__grid">
+        <article class="service__item">
+          <span>01</span>
+          <h3>Fitment advice</h3>
+          <p>Tell us the build number and we will tell you what fits. No guessing from a dropdown.</p>
+        </article>
+        <article class="service__item">
+          <span>02</span>
+          <h3>30-day returns</h3>
+          <p>Unused and unfitted parts go back within 30 days. We pay the return label in the EU.</p>
+        </article>
+        <article class="service__item">
+          <span>03</span>
+          <h3>Workshop fitting</h3>
+          <p>Book the bench in Lisbon and we will fit it while you take the long way there.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="visit">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--footer">MOTO<span>CREWZ</span><sup>®</sup></a>
+        <p>Hand-built motorcycles, spare parts and a standing excuse to take the long way home.</p>
+        <form class="newsletter" id="newsletter">
+          <label class="sr-only" for="newsletterEmail">Your email</label>
+          <input id="newsletterEmail" type="email" placeholder="YOUR EMAIL" required>
+          <button type="submit" class="newsletter__btn" data-cursor>Join <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="newsletter__status" id="newsletterStatus" aria-live="polite"></p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Menu</h4>
+          <a href="index.html#lineup">The Lineup</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="index.html#join">Book a build</a>
+          <a href="shop.html">Shop parts ↗</a>
+        </div>
+        <div>
+          <h4>Counter</h4>
+          <a href="#catalog" data-shop-filter="spare">Spare parts</a>
+          <a href="#catalog" data-shop-filter="exhaust">Exhausts</a>
+          <a href="#catalog" data-shop-filter="apparel">Apparel</a>
+          <a href="#catalog" data-shop-filter="care">Care</a>
+        </div>
+        <div>
+          <h4>Garage</h4>
+          <p>14 Foundry Lane<br>Lisbon, Portugal</p>
+          <a href="mailto:hello@motocrewz.com">hello@motocrewz.com</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__wordmark" aria-hidden="true">MOTOCREWZ</div>
+    <div class="footer__legal">
+      <span>© <span id="year">2026</span> Motocrewz®. All rights reserved.</span>
+      <span>Made for the long way home.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" aria-hidden="true"></div>
+
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true" tabindex="-1" inert>
+  <header class="cart-drawer__head">
+    <div>
+      <p class="cart-drawer__kicker">Your kit</p>
+      <h2 id="cartTitle">Cart <span id="cartCountLabel">(0)</span></h2>
+    </div>
+    <button class="icon-btn" id="cartClose" type="button" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </header>
+
+  <div class="cart-drawer__ship" id="shipProgress">
+    <div class="cart-drawer__ship-copy"><span id="shipText">$150 away from free shipping</span><span id="shipPct">0%</span></div>
+    <div class="cart-drawer__ship-track"><i id="shipBar"></i></div>
+  </div>
+
+  <div class="cart-drawer__items" id="cartItems"></div>
+
+  <div class="cart-drawer__empty" id="cartEmpty" hidden>
+    <span class="cart-drawer__empty-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4.8 8.2h14.4L18 20.2H6L4.8 8.2Z"/><path d="M9 8.2V6.4a3 3 0 0 1 6 0v1.8"/></svg>
+    </span>
+    <h3>Your kit is empty.</h3>
+    <p>The counter is open. Start with something small.</p>
+    <button class="cart-drawer__browse" id="cartBrowse" type="button">Browse the parts</button>
+  </div>
+
+  <footer class="cart-drawer__foot" id="cartFoot" hidden>
+    <div class="cart-drawer__row"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+    <p class="cart-drawer__note">Shipping and taxes calculated at checkout.</p>
+    <button class="cart-drawer__checkout" id="checkoutStart" type="button">Checkout <span aria-hidden="true">→</span></button>
+    <button class="cart-drawer__continue" id="cartContinue" type="button">Continue shopping</button>
+  </footer>
+</aside>
+
+<section class="checkout" id="checkout" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true" inert>
+  <header class="checkout__bar">
+    <a href="index.html" class="logo logo--checkout">MOTO<span>CREWZ</span><sup>®</sup></a>
+    <span class="checkout__bar-note">Reservation checkout · No payment taken</span>
+    <button class="icon-btn" id="checkoutClose" type="button" aria-label="Close checkout">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </header>
+
+  <div class="checkout__scroll" id="checkoutScroll">
+    <div class="checkout__inner container">
+      <div class="checkout__intro">
+        <p class="label"><span>04</span> Checkout</p>
+        <h2 id="checkoutTitle">Reserve your <em>kit.</em></h2>
+        <p>Contact, delivery, then payment. Card payment is the only piece still being wired up — nothing is charged today.</p>
+      </div>
+
+      <form class="checkout__form" id="checkoutForm" novalidate>
+        <div class="checkout__fields">
+
+          <fieldset class="step">
+            <legend><span>01</span> Contact</legend>
+            <div class="fields">
+              <div class="field field--wide">
+                <label for="email">Email <b aria-hidden="true">*</b></label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@somewhere.com" aria-describedby="emailError">
+                <p class="field__error" id="emailError"></p>
+              </div>
+              <div class="field">
+                <label for="firstName">First name <b aria-hidden="true">*</b></label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="Alex" aria-describedby="firstNameError">
+                <p class="field__error" id="firstNameError"></p>
+              </div>
+              <div class="field">
+                <label for="lastName">Last name <b aria-hidden="true">*</b></label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="Rider" aria-describedby="lastNameError">
+                <p class="field__error" id="lastNameError"></p>
+              </div>
+              <div class="field field--wide">
+                <label for="phone">Phone <em>optional</em></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+351 900 000 000">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="step">
+            <legend><span>02</span> Delivery</legend>
+            <div class="fields">
+              <div class="field field--wide">
+                <label for="address">Address <b aria-hidden="true">*</b></label>
+                <input id="address" name="address" type="text" autocomplete="street-address" placeholder="14 Foundry Lane" aria-describedby="addressError">
+                <p class="field__error" id="addressError"></p>
+              </div>
+              <div class="field field--wide">
+                <label for="apt">Apartment, unit <em>optional</em></label>
+                <input id="apt" name="apt" type="text" autocomplete="address-line2" placeholder="Flat 2">
+              </div>
+              <div class="field">
+                <label for="city">City <b aria-hidden="true">*</b></label>
+                <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Lisbon" aria-describedby="cityError">
+                <p class="field__error" id="cityError"></p>
+              </div>
+              <div class="field">
+                <label for="postal">Postal code <b aria-hidden="true">*</b></label>
+                <input id="postal" name="postal" type="text" autocomplete="postal-code" placeholder="1100-000" aria-describedby="postalError">
+                <p class="field__error" id="postalError"></p>
+              </div>
+              <div class="field field--wide">
+                <label for="country">Country <b aria-hidden="true">*</b></label>
+                <select id="country" name="country" autocomplete="country-name" aria-describedby="countryError">
+                  <option value="">Choose a country</option>
+                  <option value="PT">Portugal</option>
+                  <option value="ES">Spain</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                  <option value="IT">Italy</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="US">United States</option>
+                  <option value="OTHER">Somewhere else</option>
+                </select>
+                <p class="field__error" id="countryError"></p>
+              </div>
+            </div>
+
+            <div class="ship-methods" role="radiogroup" aria-label="Shipping method">
+              <label class="ship-option">
+                <input type="radio" name="shipping" value="standard" checked>
+                <span class="ship-option__dot" aria-hidden="true"></span>
+                <span class="ship-option__copy"><strong>Standard</strong><small>3–5 working days</small></span>
+                <span class="ship-option__price" data-ship-price="standard">$9</span>
+              </label>
+              <label class="ship-option">
+                <input type="radio" name="shipping" value="express">
+                <span class="ship-option__dot" aria-hidden="true"></span>
+                <span class="ship-option__copy"><strong>Express</strong><small>1–2 working days</small></span>
+                <span class="ship-option__price" data-ship-price="express">$24</span>
+              </label>
+              <label class="ship-option">
+                <input type="radio" name="shipping" value="pickup">
+                <span class="ship-option__dot" aria-hidden="true"></span>
+                <span class="ship-option__copy"><strong>Garage pickup</strong><small>14 Foundry Lane, Lisbon</small></span>
+                <span class="ship-option__price" data-ship-price="pickup">Free</span>
+              </label>
+            </div>
+            <p class="pickup-note" id="pickupNote" hidden>Collect from the garage. We will email when your order is packed — no delivery address needed.</p>
+
+            <div class="field field--wide">
+              <label for="note">Order note <em>optional</em></label>
+              <textarea id="note" name="note" rows="2" placeholder="Build number, fitment questions, delivery notes…"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="step step--payment">
+            <legend><span>03</span> Payment <em class="gateway-pill"><i aria-hidden="true"></i> Gateway not connected</em></legend>
+            <p class="step__note">Card payment is the last piece of the shop still being wired up. Place the order and we will email a secure payment link for the total once the gateway is live. No card details are collected today.</p>
+            <div class="payment-mock" aria-hidden="true">
+              <div class="field field--wide">
+                <label>Card number</label>
+                <input type="text" value="•••• •••• •••• ••••" disabled>
+              </div>
+              <div class="field">
+                <label>Expiry</label>
+                <input type="text" value="MM / YY" disabled>
+              </div>
+              <div class="field">
+                <label>CVC</label>
+                <input type="text" value="•••" disabled>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="terms">
+            <label class="check" for="terms">
+              <input id="terms" name="terms" type="checkbox">
+              <span aria-hidden="true"></span>
+              I understand this is a reservation and no payment is taken today.
+            </label>
+            <p class="field__error" id="termsError"></p>
+          </div>
+
+        </div>
+
+        <aside class="checkout__summary" aria-label="Order summary">
+          <div class="summary">
+            <div class="summary__head">
+              <h3>Your order</h3>
+              <span id="summaryCount">0 items</span>
+            </div>
+            <ul class="summary__items" id="summaryItems"></ul>
+            <div class="summary__calc">
+              <div><span>Subtotal</span><strong id="summarySubtotal">$0</strong></div>
+              <div><span>Shipping</span><strong id="summaryShipping">—</strong></div>
+              <div><span>Tax</span><strong>Included</strong></div>
+              <div class="summary__total"><span>Total due</span><strong id="summaryTotal">$0</strong></div>
+            </div>
+            <button class="summary__submit" type="submit">Place order <span aria-hidden="true">→</span></button>
+            <p class="summary__note"><i aria-hidden="true"></i> Payment gateway not connected — no charge today.</p>
+            <button class="summary__back" id="checkoutBack" type="button">← Back to cart</button>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </div>
+
+  <div class="checkout__done" id="checkoutDone" hidden>
+    <div class="checkout__done-inner">
+      <p class="label"><span>05</span> Order reserved</p>
+      <span class="checkout__done-mark" aria-hidden="true">✓</span>
+      <h2>You're in the <em>queue.</em></h2>
+      <p class="checkout__done-copy">Order <strong id="doneRef">MC–000000</strong> is reserved for <strong id="doneEmail">you</strong>. Your cart and details are still on this device — nothing has been charged.</p>
+      <div class="gateway-card">
+        <span class="gateway-card__dot" aria-hidden="true"></span>
+        <div>
+          <strong>Payment gateway not connected</strong>
+          <p>When the gateway goes live, we will email a secure payment link for <strong id="doneTotal">$0</strong>. No card details were collected.</p>
+        </div>
+      </div>
+      <div class="checkout__done-actions">
+        <button class="btn btn--dark" id="doneShop" type="button">Back to the counter</button>
+        <button class="btn btn--ghost" id="doneCart" type="button">View cart</button>
+      </div>
+      <p class="checkout__done-small">Questions? <a href="mailto:hello@motocrewz.com">hello@motocrewz.com</a></p>
+    </div>
+  </div>
+</section>
+
+<button class="cart-dock" id="cartDock" type="button" aria-haspopup="dialog" aria-controls="cartDrawer" hidden>
+  <span class="cart-dock__count" id="dockCount">0</span>
+  <span class="cart-dock__label">View cart</span>
+  <strong id="dockTotal">$0</strong>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+  <span class="toast__dot" aria-hidden="true"></span>
+  <span class="toast__text" id="toastText">Added to cart</span>
+  <button class="toast__view" id="toastView" type="button">View cart</button>
+</div>
+
+<p class="sr-only" id="shopStatus" aria-live="polite"></p>
+
+<script src="shop.js" defer></script>
+</body>
+</html>

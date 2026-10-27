@@ -7,15 +7,15 @@
 <meta name="description" content="Three signature machines. One stubborn crew. Hand-built motorcycles in small batches, made in Lisbon for riders who take the scenic route on purpose.">
 <meta property="og:title" content="MOTOCREWZ® — Built for the long way home">
 <meta property="og:description" content="Three signature machines. One stubborn crew. Hand-built in Lisbon.">
-<meta property="og:image" content="assets/p1.jpg">
+<meta property="og:image" content="assets/p2.jpg">
 <meta name="theme-color" content="#EDE7DB">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151310'/%3E%3Cpath d='M16 46V18h7l9 13 9-13h7v28h-7V30l-9 12-9-12v16z' fill='%23EDE7DB'/%3E%3Ccircle cx='48' cy='18' r='4' fill='%23D8552B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
 <link rel="stylesheet" href="styles.css">
-<noscript><style>.intro{display:none!important}body{overflow:auto!important}</style></noscript>
+<noscript><style>.intro{display:none!important}body{overflow:auto!important}.story{height:auto!important}</style></noscript>
 </head>
 <body class="is-loading">
 
@@ -40,69 +40,63 @@
 
 <header class="nav" id="nav">
   <div class="nav__inner">
-    <a href="#top" class="logo" aria-label="Motocrewz home">MOTO<span>CREWZ</span><sup>®</sup></a>
+    <button class="nav__menu" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span class="nav__burger" aria-hidden="true"><i></i><i></i></span>
+      <span class="nav__label">Menu</span>
+    </button>
+
+    <a href="#top" class="logo logo--nav" aria-label="Motocrewz home">MOTOCREWZ</a>
+
+    <a href="shop.html" class="nav__store" data-cursor aria-label="Shop parts and gear">
+      <span>Store</span>
+      <svg class="nav__bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <path d="M4.8 8.2h14.4L18 20.2H6L4.8 8.2Z"/><path d="M9 8.2V6.4a3 3 0 0 1 6 0v1.8"/>
+      </svg>
+    </a>
+
     <nav class="nav__links" id="navLinks" aria-label="Primary">
-      <a href="#lineup">The Lineup</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#visit">Visit</a>
-      <a href="mailto:hello@motocrewz.com">Contact</a>
+      <div class="nav__links-inner">
+        <a href="#lineup" class="nav__link"><span>01</span>The Lineup</a>
+        <a href="#reviews" class="nav__link"><span>02</span>Reviews</a>
+        <a href="#visit" class="nav__link"><span>03</span>Visit</a>
+        <a href="mailto:hello@motocrewz.com" class="nav__link"><span>04</span>Contact</a>
+      </div>
+      <div class="nav__links-foot">
+        <span>Lisbon, Portugal</span>
+        <a href="mailto:hello@motocrewz.com">hello@motocrewz.com</a>
+        <a href="#join" class="nav__links-cta">Book a build →</a>
+      </div>
     </nav>
-    <div class="nav__right">
-      <a href="#join" class="btn btn--dark magnetic" data-cursor>Book a build</a>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span>
-      </button>
-    </div>
   </div>
 </header>
 
 <main id="top">
 
   <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow" data-reveal><span class="dot"></span> EST. 2026 — LISBON, PORTUGAL</p>
-          <h1 class="hero__title" data-reveal style="--d:.08s">
-            <span class="line">BUILT FOR</span>
-            <span class="line">THE <em>long way</em></span>
-            <span class="line">HOME<span class="accent-dot">.</span></span>
-          </h1>
-          <p class="hero__lede" data-reveal style="--d:.16s">Three signature machines. One stubborn crew. Hand-built in small batches for riders who take the scenic route on purpose.</p>
-          <div class="hero__actions" data-reveal style="--d:.24s">
-            <a href="#lineup" class="btn btn--dark magnetic" data-cursor>Explore the lineup</a>
-            <a href="#reviews" class="btn btn--ghost magnetic" data-cursor>Hear from the crew</a>
-          </div>
-          <div class="hero__stats" data-reveal style="--d:.32s">
-            <div class="stat"><strong>12</strong><span>Builds per year</span></div>
-            <div class="stat"><strong>03</strong><span>Signature machines</span></div>
-            <div class="stat"><strong>01</strong><span>Crew. No shortcuts.</span></div>
-          </div>
-        </div>
+    <div class="hero__bg" aria-hidden="true">
+      <img src="assets/p2.jpg" alt="" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero__veil" aria-hidden="true"></div>
 
-        <div class="hero__media" data-reveal style="--d:.18s">
-          <figure class="hero__figure">
-            <img src="assets/p1.jpg" alt="A custom Motocrewz motorcycle on an open road" fetchpriority="high">
-            <figcaption class="hero__tag"><span class="dot"></span> N° 001 — NOMAD 01</figcaption>
-            <div class="hero__spec">
-              <span>689 CC</span><span>187 KG</span><span>6-SPEED</span>
-            </div>
-          </figure>
-          <div class="stamp" aria-hidden="true">
-            <svg viewBox="0 0 120 120">
-              <defs><path id="stampPath" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
-              <text><textPath href="#stampPath">HAND-BUILT IN SMALL BATCHES • MOTOCREWZ • LISBON • </textPath></text>
-            </svg>
-            <span class="stamp__mark">✳</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__foot" data-reveal style="--d:.4s">
-        <a href="#lineup" class="scroll-cue" data-cursor><span>Scroll to explore</span><i></i></a>
-        <span class="hero__side">SCENIC ROUTES ONLY — SINCE 2026</span>
+    <div class="hero__inner">
+      <h1 class="hero__title" data-reveal>Vulcan</h1>
+      <p class="hero__sub" data-reveal style="--d:.1s">A story of proportion and craftsmanship.</p>
+      <div class="hero__actions" data-reveal style="--d:.18s">
+        <a href="#lineup" class="hero__cta" data-cursor>Discover the machines</a>
+        <a href="shop.html" class="hero__cta hero__cta--buy" data-cursor>Buy parts <span aria-hidden="true">↗</span></a>
       </div>
     </div>
+
+    <div class="hero__meta" data-reveal style="--d:.26s">
+      <i aria-hidden="true"></i>
+      <span>N° 002 — Vulcan 02<br><small>41°08′N 08°36′W · Lisbon</small></span>
+    </div>
+
+    <aside class="hero__note" data-reveal style="--d:.32s" aria-label="Build enquiry">
+      <img class="hero__note-thumb" src="assets/p1.jpg" alt="" loading="lazy" decoding="async">
+      <p class="hero__note-copy"><small>Field note — 02</small><strong>Ready for a new adventure?</strong><span>We build to order, one crew at a time.</span></p>
+      <a href="#join" class="hero__note-link" data-cursor>Book a build</a>
+    </aside>
   </section>
 
   <div class="ticker" aria-hidden="true">
@@ -149,6 +143,148 @@
 
         <div class="carousel__dots" id="dots" role="group" aria-label="Choose a machine"></div>
       </div>
+
+      <div class="build-sheet" id="buildSheet" role="region" aria-labelledby="sheetNameWrap" data-reveal style="--d:.16s">
+        <div class="build-sheet__top">
+          <span class="build-sheet__kicker">Build sheet <b id="sheetCode">MC–01</b></span>
+          <span class="build-sheet__place">Lisbon · <b id="sheetBuilt">24</b> built</span>
+        </div>
+
+        <div class="build-sheet__body">
+          <div class="build-sheet__intro">
+            <h3 class="build-sheet__title" id="sheetNameWrap">
+              <span id="sheetName">Nomad 01</span>
+              <em id="sheetType">Long-distance scrambler</em>
+            </h3>
+            <p class="build-sheet__note" id="sheetNote">A tall, neutral scrambler built around the long road out of Lisbon. Soft suspension, a flat seat, and enough tank to forget the next town.</p>
+            <div class="build-sheet__finish">
+              <span class="build-sheet__swatch" id="sheetSwatch" aria-hidden="true"></span>
+              <span class="build-sheet__finish-copy"><span>Finish</span><strong id="sheetFinish">Sand / Olive</strong></span>
+            </div>
+          </div>
+
+          <dl class="build-sheet__ledger" id="sheetLedger"></dl>
+        </div>
+
+        <div class="build-sheet__foot">
+          <div class="build-sheet__stat"><span>Base build</span><strong id="sheetPrice">$12,400</strong></div>
+          <div class="build-sheet__stat"><span>Lead time</span><strong id="sheetLead">12 weeks</strong></div>
+          <div class="build-sheet__stat"><span>Series</span><strong id="sheetSeries">No. 01 / 24</strong></div>
+          <a class="build-sheet__link" href="#join" data-cursor>Start a build <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="assembly" id="assembly" aria-labelledby="assemblyTitle">
+    <div class="assembly__inner container">
+      <div class="assembly__top">
+        <span>03 — The workshop</span>
+        <span>Hand-built in Lisbon</span>
+      </div>
+
+      <div class="assembly__head">
+        <span class="assembly__pill">Good things</span>
+        <h2 class="assembly__title" id="assemblyTitle">
+          <span class="assembly__row assembly__row--top">Built</span>
+          <span class="assembly__row assembly__row--bottom"><span>Piece</span><span>By piece<span class="assembly__accent">.</span></span></span>
+        </h2>
+        <span class="assembly__pill assembly__pill--alt">Come together</span>
+      </div>
+
+      <span class="assembly__doodle assembly__doodle--star" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><path d="M50 1c3.4 33.9 13.7 44.2 49 49-35.3 4.8-45.6 15.1-49 49-3.4-33.9-13.7-44.2-49-49 35.3-4.8 45.6-15.1 49-49Z"/></svg>
+      </span>
+      <span class="assembly__doodle assembly__doodle--zigzag" aria-hidden="true">
+        <svg viewBox="0 0 90 300" preserveAspectRatio="none"><path d="M45 0 0 45l90 45L0 135l90 45L0 225l45 45" fill="none" stroke="currentColor" stroke-width="7"/></svg>
+      </span>
+
+      <div class="assembly__art" id="assemblyArt">
+        <svg class="assembly__bike" viewBox="105 112 790 410" role="img" aria-labelledby="assemblySvgTitle assemblySvgDesc">
+          <title id="assemblySvgTitle">A custom motorcycle, built piece by piece</title>
+          <desc id="assemblySvgDesc">A side view line illustration of a custom motorcycle, assembled from its wheels, frame, engine, tank, fork, seat, handlebars, and exhaust.</desc>
+          <defs>
+            <linearGradient id="tankPaint" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d8552b"/><stop offset="1" stop-color="#a83e20"/></linearGradient>
+          </defs>
+          <g class="assembled-bike" data-piece="assembled-bike">
+          <g class="assembly-part assembly-wheel assembly-wheel--rear" data-piece="wheel-rear">
+            <circle class="tire" cx="285" cy="390" r="105"/><circle class="rim" cx="285" cy="390" r="85"/><circle class="hub" cx="285" cy="390" r="13"/>
+            <g class="spokes"><path d="M285 305v170M200 390h170M225 330l120 120m0-120L225 450"/></g>
+            <circle class="rim-inner" cx="285" cy="390" r="70"/>
+          </g>
+          <g class="assembly-part assembly-wheel assembly-wheel--front" data-piece="wheel-front">
+            <circle class="tire" cx="760" cy="390" r="105"/><circle class="rim" cx="760" cy="390" r="85"/><circle class="hub" cx="760" cy="390" r="13"/>
+            <g class="spokes"><path d="M760 305v170M675 390h170M700 330l120 120m0-120L700 450"/></g>
+            <circle class="rim-inner" cx="760" cy="390" r="70"/>
+          </g>
+          <g class="assembly-part assembly-frame" data-piece="frame">
+            <path d="M285 390 398 290 525 390 620 248 760 390M398 290l222-42M398 290l-13 108M525 390l-140 8M525 390l95-142"/>
+            <path class="frame-detail" d="m398 290 127 100m-140 8 140-8"/>
+          </g>
+          <g class="assembly-part assembly-engine" data-piece="engine">
+            <path class="engine-case" d="M438 326q18-28 54-20l44 18 16 46-26 36h-80l-25-31z"/>
+            <path class="engine-fin" d="m440 340 87 0m-91 13 98 0m-88 13 82 0m-69 13 61 0"/>
+            <circle class="engine-cap" cx="493" cy="370" r="22"/><circle class="engine-bolt" cx="493" cy="370" r="7"/>
+            <path class="engine-detail" d="m458 320 9-18h36m48 24 23-9"/>
+          </g>
+          <g class="assembly-part assembly-fork" data-piece="fork">
+            <path d="m620 248 140 142M638 240l140 143"/>
+            <path class="fork-detail" d="m744 374 14 15m-122-151 15 1"/>
+          </g>
+          <g class="assembly-part assembly-tank" data-piece="tank">
+            <path class="tank-shape" d="M422 236q7-25 39-27h83q20 0 32 18l22 34-27 19H419l-18-17z"/>
+            <path class="tank-highlight" d="M434 235q10-14 30-14h62"/>
+            <path class="tank-mark" d="m468 250 18 0"/>
+          </g>
+          <g class="assembly-part assembly-seat" data-piece="seat">
+            <path class="seat-shape" d="M344 250q9-19 31-23l76 5-20 32-99 10z"/>
+            <path class="seat-stitch" d="m359 251 65 3"/>
+          </g>
+          <g class="assembly-part assembly-bars" data-piece="bars">
+            <path d="m620 248 15-63 40-9m-40 9-31-10m31 10 23 7m-2 54 24 4"/>
+            <path class="bar-grip" d="m675 176 20-3m-105-2-17-3"/>
+          </g>
+          <g class="assembly-part assembly-exhaust" data-piece="exhaust">
+            <path d="M500 397q-42 33-82 49l-54 2q-16 0-19 14t12 17h80q14-2 23-13l47-52"/>
+            <path class="exhaust-tip" d="m355 452-17 9m21 7-17 8"/>
+          </g>
+          <g class="assembly-part assembly-fenders" data-piece="fenders">
+            <path d="M180 365q48-73 113-78m0 0q69 5 112 68m244-85q57-28 111 11m0 0q47 31 69 81"/>
+          </g>
+          <g class="assembly-part assembly-details" data-piece="details">
+            <path d="m620 248 6-20h20l7 19m-27 27-25 18m-231-28-18 19m-103 107h30m445 0h30"/>
+            <circle cx="640" cy="226" r="5"/><circle cx="388" cy="289" r="5"/>
+            <path class="light" d="M674 218q21 2 27 18-13 9-29 2z"/>
+            <path class="taillight" d="m345 246-15 4 4 10 18-3"/>
+          </g>
+          <g class="assembly-part assembly-ground" data-piece="ground">
+            <path d="M130 500h665"/>
+            <path class="ground-dash" d="M205 512h85m378 0h70"/>
+          </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="assembly__base">
+        <div class="assembly__caption"><span class="assembly__count">BUILT TO ORDER</span><span>Frame, engine, bodywork — made by hand, one at a time.</span></div>
+        <div class="assembly__actions">
+          <a href="#lineup" class="assembly__btn assembly__btn--ghost" data-cursor>See the builds</a>
+          <a href="#join" class="assembly__btn assembly__btn--solid" data-cursor>Book a build</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story" id="story" aria-label="Film N° 002 — Vulcan, a scroll-driven 3D story">
+    <div class="story__root" id="storyRoot">
+      <div class="story__fallback">
+        <img src="assets/p2.jpg" alt="Vulcan 02 café racer, photographed in the Lisbon workshop" loading="lazy" decoding="async">
+        <div class="story__fallback-copy">
+          <p class="story__kicker">Film N° 002 — Vulcan</p>
+          <h2 class="story__fallback-title">The long way home,<br><em>in three dimensions.</em></h2>
+          <p>Scroll through the build — form, parts, finish, road.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -156,7 +292,7 @@
     <div class="container">
       <div class="reviews__head">
         <div>
-          <p class="label label--light" data-reveal><span>03</span> — THE CREW SPEAKS</p>
+          <p class="label label--light" data-reveal><span>04</span> — THE CREW SPEAKS</p>
           <h2 class="h2 h2--light" data-reveal style="--d:.06s">Don't take<br><em>our word.</em></h2>
         </div>
         <div class="rating" data-reveal style="--d:.12s">
@@ -193,7 +329,7 @@
 
   <section class="join" id="join">
     <div class="container">
-      <p class="label" data-reveal><span>04</span> — YOUR TURN</p>
+      <p class="label" data-reveal><span>05</span> — YOUR TURN</p>
       <h2 class="join__title" data-reveal style="--d:.06s">Ready to<br><em>ride different?</em></h2>
       <div class="join__row" data-reveal style="--d:.14s">
         <p>Tell us where you ride and how you like to get there. We'll take it from the first sketch to the first mile.</p>
@@ -225,6 +361,7 @@
           <a href="#lineup">The Lineup</a>
           <a href="#reviews">Reviews</a>
           <a href="#join">Book a build</a>
+          <a href="shop.html">Shop parts ↗</a>
         </div>
         <div>
           <h4>Garage</h4>
@@ -248,7 +385,13 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js" crossorigin></script>
 <script src="script.js"></script>
+<script src="story.js"></script>
 </body>
 </html>
